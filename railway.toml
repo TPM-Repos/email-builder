@@ -4,8 +4,8 @@ buildCommand = "cd packages/editor-sample && npm install && npm run build"
 
 [deploy]
 startCommand = "cd packages/editor-sample && npm start"
-healthcheckPath = "/email-builder-js/"
-healthcheckTimeout = 100
+healthcheckPath = "/"
+healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
 

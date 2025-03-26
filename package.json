@@ -1,10 +1,7 @@
 {
   "name": "@usewaypoint-monorepo",
   "version": "0.0.6",
-  "scripts": {
-    "build": "cd packages/editor-sample && npm install && npm run build",
-    "start": "cd packages/editor-sample && npm install && npm run start"
-  },
+  "scripts": {},
   "dependencies": {
     "express": "^4.18.3"
   }
