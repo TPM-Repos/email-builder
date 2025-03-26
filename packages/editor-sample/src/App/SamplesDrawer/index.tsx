@@ -20,36 +20,36 @@ export default function SamplesDrawer() {
         width: samplesDrawerOpen ? SAMPLES_DRAWER_WIDTH : 0,
       }}
     >
-      <Stack spacing={3} py={1} px={2} width={SAMPLES_DRAWER_WIDTH}>
-        <Stack spacing={2} sx={{ '& .MuiButtonBase-root': { width: '100%', justifyContent: 'flex-start' } }}>
+      <Stack spacing={3} py={1} px={2} width={SAMPLES_DRAWER_WIDTH} sx={{ height: '100%' }}>
+        <Stack spacing={2} sx={{ '& .MuiButtonBase-root': { width: '100%', justifyContent: 'flex-start' }, flex: 1 }}>
           <Typography variant="h6" component="h1" sx={{ p: 0.75 }}>
             EmailBuilder.js
           </Typography>
 
           <Stack alignItems="flex-start">
             <SidebarButton href="#">Empty</SidebarButton>
-            <SidebarButton href="#sample/welcome">Welcome email</SidebarButton>
+            {/* <SidebarButton href="#sample/welcome">Welcome email</SidebarButton> */}
             <SidebarButton href="#sample/account-approved">Account Approved</SidebarButton>
-            <SidebarButton href="#sample/driveworks">DriveWorks Template</SidebarButton>
-            <SidebarButton href="#sample/one-time-password">One-time passcode (OTP)</SidebarButton>
+            {/* <SidebarButton href="#sample/driveworks">DriveWorks Template</SidebarButton> */}
+            {/* <SidebarButton href="#sample/one-time-password">One-time passcode (OTP)</SidebarButton> */}
             <SidebarButton href="#sample/reset-password">Reset password</SidebarButton>
-            <SidebarButton href="#sample/order-ecomerce">E-commerce receipt</SidebarButton>
-            <SidebarButton href="#sample/subscription-receipt">Subscription receipt</SidebarButton>
-            <SidebarButton href="#sample/reservation-reminder">Reservation reminder</SidebarButton>
-            <SidebarButton href="#sample/post-metrics-report">Post metrics</SidebarButton>
-            <SidebarButton href="#sample/respond-to-message">Respond to inquiry</SidebarButton>
+            {/* <SidebarButton href="#sample/order-ecomerce">E-commerce receipt</SidebarButton> */}
+            {/* <SidebarButton href="#sample/subscription-receipt">Subscription receipt</SidebarButton> */}
+            {/* <SidebarButton href="#sample/reservation-reminder">Reservation reminder</SidebarButton> */}
+            {/* <SidebarButton href="#sample/post-metrics-report">Post metrics</SidebarButton> */}
+            {/* <SidebarButton href="#sample/respond-to-message">Respond to inquiry</SidebarButton> */}
           </Stack>
 
-          <Divider />
+          {/* <Divider /> */}
+        </Stack>
 
-          <Stack>
-            <Button size="small" href="https://www.usewaypoint.com/open-source/emailbuilderjs" target="_blank">
-              Learn more
-            </Button>
-            <Button size="small" href="https://github.com/usewaypoint/email-builder-js" target="_blank">
-              View on GitHub
-            </Button>
-          </Stack>
+        <Stack alignItems="flex-start">
+          <Button size="small" href="https://www.usewaypoint.com/open-source/emailbuilderjs" target="_blank">
+            Learn more
+          </Button>
+          <Button size="small" href="https://github.com/usewaypoint/email-builder-js" target="_blank">
+            View on GitHub
+          </Button>
         </Stack>
       </Stack>
     </Drawer>
