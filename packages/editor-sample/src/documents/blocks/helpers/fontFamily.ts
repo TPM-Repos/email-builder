@@ -46,6 +46,16 @@ export const FONT_FAMILIES = [
     label: 'Monospace',
     value: '"Nimbus Mono PS", "Courier New", "Cutive Mono", monospace',
   },
+  {
+    key: 'ROBOTO',
+    label: 'Roboto',
+    value: '"Roboto", sans-serif',
+  },
+  {
+    key: 'POPPINS',
+    label: 'Poppins',
+    value: '"Poppins", sans-serif',
+  },
 ];
 
 export const FONT_FAMILY_NAMES = [
@@ -58,4 +68,6 @@ export const FONT_FAMILY_NAMES = [
   'MODERN_SERIF',
   'BOOK_SERIF',
   'MONOSPACE',
+  'ROBOTO',
+  'POPPINS',
 ] as const;

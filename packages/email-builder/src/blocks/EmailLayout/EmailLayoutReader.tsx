@@ -25,6 +25,10 @@ function getFontFamily(fontFamily: EmailLayoutProps['fontFamily']) {
       return '"Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif';
     case 'MONOSPACE':
       return '"Nimbus Mono PS", "Courier New", "Cutive Mono", monospace';
+    case 'ROBOTO':
+      return '"Roboto", sans-serif';
+    case 'POPPINS':
+      return '"Poppins", sans-serif';
   }
 }
 

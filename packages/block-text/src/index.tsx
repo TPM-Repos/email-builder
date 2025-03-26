@@ -14,6 +14,8 @@ const FONT_FAMILY_SCHEMA = z
     'MODERN_SERIF',
     'BOOK_SERIF',
     'MONOSPACE',
+    'ROBOTO',
+    'POPPINS',
   ])
   .nullable()
   .optional();
@@ -38,6 +40,10 @@ function getFontFamily(fontFamily: z.infer<typeof FONT_FAMILY_SCHEMA>) {
       return '"Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif';
     case 'MONOSPACE':
       return '"Nimbus Mono PS", "Courier New", "Cutive Mono", monospace';
+    case 'ROBOTO':
+      return '"Roboto", sans-serif';
+    case 'POPPINS':
+      return '"Poppins", sans-serif';
   }
   return undefined;
 }

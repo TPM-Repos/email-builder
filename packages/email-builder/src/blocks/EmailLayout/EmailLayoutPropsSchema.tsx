@@ -17,6 +17,8 @@ const FONT_FAMILY_SCHEMA = z
     'MODERN_SERIF',
     'BOOK_SERIF',
     'MONOSPACE',
+    'ROBOTO',
+    'POPPINS',
   ])
   .nullable()
   .optional();
