@@ -7,6 +7,7 @@ import RESET_PASSWORD from './sample/reset-password';
 import RESPOND_TO_MESSAGE from './sample/respond-to-message';
 import SUBSCRIPTION_RECEIPT from './sample/subscription-receipt';
 import WELCOME from './sample/welcome';
+import ACCOUNT_APPROVED from './sample/account-approved';
 
 export default function getConfiguration(template: string) {
   if (template.startsWith('#sample/')) {
@@ -14,6 +15,8 @@ export default function getConfiguration(template: string) {
     switch (sampleName) {
       case 'welcome':
         return WELCOME;
+      case 'account-approved':
+        return ACCOUNT_APPROVED;
       case 'one-time-password':
         return ONE_TIME_PASSCODE;
       case 'order-ecomerce':
