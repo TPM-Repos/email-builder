@@ -1,6 +1,6 @@
 import { TEditorConfiguration } from '../../documents/editor/core';
 
-const ACCOUNT_APPROVED: TEditorConfiguration = {
+const PASSWORD_RESET_CONFIRMATION: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
@@ -50,7 +50,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         width: 200,
         height: 60,
         url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
-        alt: 'TPM Logo',
+        alt: 'HSI Logo',
         contentAlignment: 'middle'
       }
     }
@@ -76,7 +76,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
     type: 'Heading',
     data: {
       props: {
-        text: 'Account Approved',
+        text: 'Password Reset Confirmation',
         level: 'h1'
       },
       style: {
@@ -104,6 +104,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
       props: {
         columnsCount: 2,
         columnsGap: 16,
+        contentAlignment: 'middle',
         columns: [
           {
             childrenIds: [
@@ -135,7 +136,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
       },
       props: {
         url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
-        alt: 'Sample product',
+        alt: 'HSI Logo',
         linkHref: null,
         contentAlignment: 'middle'
       }
@@ -145,7 +146,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
     type: 'Heading',
     data: {
       props: {
-        text: 'Account Approved'
+        text: 'Password Reset Confirmation'
       },
       style: {
         textAlign: 'right',
@@ -215,7 +216,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         }
       },
       props: {
-        text: 'Congratulations, the account you requested has been approved. You now have access to the configurator'
+        text: 'Password Updated, Your password has recently been updated. You may now login using the link below'
       }
     }
   },
@@ -235,7 +236,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         buttonBackgroundColor: '#0354A6',
         size: 'large',
         text: 'Login',
-        url: 'https://www.usewaypoint.com'
+        url: '{DRIVEWORKS_VARIABLE_LOGIN_URL}'
       }
     }
   },
@@ -258,4 +259,4 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
   }
 };
 
-export default ACCOUNT_APPROVED; 
+export default PASSWORD_RESET_CONFIRMATION; 

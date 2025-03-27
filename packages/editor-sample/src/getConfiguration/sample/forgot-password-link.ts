@@ -1,6 +1,6 @@
 import { TEditorConfiguration } from '../../documents/editor/core';
 
-const ACCOUNT_APPROVED: TEditorConfiguration = {
+const FORGOT_PASSWORD_LINK: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
@@ -76,7 +76,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
     type: 'Heading',
     data: {
       props: {
-        text: 'Account Approved',
+        text: 'Forgot Password Link',
         level: 'h1'
       },
       style: {
@@ -135,7 +135,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
       },
       props: {
         url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
-        alt: 'Sample product',
+        alt: 'HSI Logo',
         linkHref: null,
         contentAlignment: 'middle'
       }
@@ -145,7 +145,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
     type: 'Heading',
     data: {
       props: {
-        text: 'Account Approved'
+        text: 'Forgot Password Link'
       },
       style: {
         textAlign: 'right',
@@ -215,7 +215,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         }
       },
       props: {
-        text: 'Congratulations, the account you requested has been approved. You now have access to the configurator'
+        text: 'Forgotten Password, Please use the link below to Reset your password'
       }
     }
   },
@@ -234,8 +234,8 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
       props: {
         buttonBackgroundColor: '#0354A6',
         size: 'large',
-        text: 'Login',
-        url: 'https://www.usewaypoint.com'
+        text: 'Reset Password',
+        url: '{DRIVEWORKS_VARIABLE_RESET_PASSWORD_URL}'
       }
     }
   },
@@ -258,4 +258,4 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
   }
 };
 
-export default ACCOUNT_APPROVED; 
+export default FORGOT_PASSWORD_LINK; 

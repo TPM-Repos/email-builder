@@ -1,6 +1,6 @@
 import { TEditorConfiguration } from '../../documents/editor/core';
 
-const ACCOUNT_APPROVED: TEditorConfiguration = {
+const ACCOUNT_DENIED: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
@@ -76,7 +76,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
     type: 'Heading',
     data: {
       props: {
-        text: 'Account Approved',
+        text: 'Account Denied',
         level: 'h1'
       },
       style: {
@@ -135,7 +135,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
       },
       props: {
         url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
-        alt: 'Sample product',
+        alt: 'HSI Logo',
         linkHref: null,
         contentAlignment: 'middle'
       }
@@ -145,7 +145,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
     type: 'Heading',
     data: {
       props: {
-        text: 'Account Approved'
+        text: 'Account Denied'
       },
       style: {
         textAlign: 'right',
@@ -215,7 +215,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         }
       },
       props: {
-        text: 'Congratulations, the account you requested has been approved. You now have access to the configurator'
+        text: 'Request Denied, The DriveWorks Administrator for has denied your request for access. Your account has been deleted.'
       }
     }
   },
@@ -234,8 +234,8 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
       props: {
         buttonBackgroundColor: '#0354A6',
         size: 'large',
-        text: 'Login',
-        url: 'https://www.usewaypoint.com'
+        text: 'Contact Administrator',
+        url: 'mailto:joshmagie@tpm.com'
       }
     }
   },
@@ -252,10 +252,10 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         }
       },
       props: {
-        text: 'Please contact your administrator if you have any issues.'
+        text: 'If you believe this to be in error, Email Administrator directly using the button above.'
       }
     }
   }
 };
 
-export default ACCOUNT_APPROVED; 
+export default ACCOUNT_DENIED; 

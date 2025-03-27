@@ -1,6 +1,6 @@
 import { TEditorConfiguration } from '../../documents/editor/core';
 
-const ACCOUNT_APPROVED: TEditorConfiguration = {
+const ACCOUNT_EXISTS: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
@@ -76,7 +76,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
     type: 'Heading',
     data: {
       props: {
-        text: 'Account Approved',
+        text: 'Account Already Exists',
         level: 'h1'
       },
       style: {
@@ -135,7 +135,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
       },
       props: {
         url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
-        alt: 'Sample product',
+        alt: 'HSI Logo',
         linkHref: null,
         contentAlignment: 'middle'
       }
@@ -145,7 +145,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
     type: 'Heading',
     data: {
       props: {
-        text: 'Account Approved'
+        text: 'Account Already Exists'
       },
       style: {
         textAlign: 'right',
@@ -215,7 +215,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         }
       },
       props: {
-        text: 'Congratulations, the account you requested has been approved. You now have access to the configurator'
+        text: 'Account Request - Already Exists. A new account using this Email address was requested but was denied because an account already exists.'
       }
     }
   },
@@ -235,7 +235,7 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         buttonBackgroundColor: '#0354A6',
         size: 'large',
         text: 'Login',
-        url: 'https://www.usewaypoint.com'
+        url: '{DRIVEWORKS_VARIABLE_LOGIN_URL}'
       }
     }
   },
@@ -252,10 +252,10 @@ const ACCOUNT_APPROVED: TEditorConfiguration = {
         }
       },
       props: {
-        text: 'Please contact your administrator if you have any issues.'
+        text: 'There is a link on the login page to Reset your password if you have forgotten it. Please contact your administrator if you have any issues.'
       }
     }
   }
 };
 
-export default ACCOUNT_APPROVED; 
+export default ACCOUNT_EXISTS; 

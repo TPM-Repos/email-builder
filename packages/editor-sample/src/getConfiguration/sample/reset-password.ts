@@ -4,153 +4,258 @@ const RESET_PASSWORD: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
-      backdropColor: '#F2F5F7',
+      backdropColor: '#F2F4F7',
       canvasColor: '#FFFFFF',
-      textColor: '#242424',
+      textColor: '#667085',
       fontFamily: 'MODERN_SANS',
       childrenIds: [
-        'block_3gpSGmkgL4nWSBQjWCjK2z',
-        'block_BjpQ7DGTtvaEuYRMd7VE7w',
-        'block_xyg4GWmgGbJJEDRQc76bC',
-        'block_76VptLCZ47t3EkAarUufEJ',
-        'block_Gtk3kDYwsJqEmQf2XGWPRc',
-        'block_LACDCzUS2bsvEbmnq1KHuW',
-      ],
-    },
+        'block_header_divider',
+        'block-1743002813777',
+        'block-1743003087322',
+        'block_content'
+      ]
+    }
   },
-  block_3gpSGmkgL4nWSBQjWCjK2z: {
-    type: 'Image',
-    data: {
-      style: {
-        padding: {
-          top: 24,
-          bottom: 8,
-          right: 24,
-          left: 24,
-        },
-        backgroundColor: null,
-        textAlign: 'left',
-      },
-      props: {
-        height: 24,
-        url: 'https://d1iiu589g39o6c.cloudfront.net/live/platforms/platform_A9wwKSL6EV6orh6f/images/wptemplateimage_Xh1R23U9ziyct9nd/codoc.png',
-        alt: '',
-        linkHref: null,
-        contentAlignment: 'middle',
-      },
-    },
-  },
-  block_BjpQ7DGTtvaEuYRMd7VE7w: {
-    type: 'Heading',
-    data: {
-      style: {
-        color: null,
-        backgroundColor: null,
-        fontFamily: null,
-        fontWeight: 'bold',
-        textAlign: 'left',
-        padding: {
-          top: 32,
-          bottom: 0,
-          left: 24,
-          right: 24,
-        },
-      },
-      props: {
-        level: 'h3',
-        text: 'Reset your password?',
-      },
-    },
-  },
-  block_xyg4GWmgGbJJEDRQc76bC: {
-    type: 'Text',
-    data: {
-      style: {
-        color: '#474849',
-        backgroundColor: null,
-        fontSize: 14,
-        fontFamily: null,
-        fontWeight: 'normal',
-        textAlign: 'left',
-        padding: {
-          top: 8,
-          bottom: 16,
-          left: 24,
-          right: 24,
-        },
-      },
-      props: {
-        text: `If you didn't request a reset, don't worry. You can safely ignore this email.`,
-      },
-    },
-  },
-  block_76VptLCZ47t3EkAarUufEJ: {
-    type: 'Button',
-    data: {
-      style: {
-        backgroundColor: null,
-        fontSize: 14,
-        fontFamily: null,
-        fontWeight: 'bold',
-        textAlign: 'left',
-        padding: {
-          top: 12,
-          bottom: 32,
-          right: 24,
-          left: 24,
-        },
-      },
-      props: {
-        buttonBackgroundColor: '#0068FF',
-        buttonStyle: 'rectangle',
-        buttonTextColor: '#FFFFFF',
-        fullWidth: false,
-        size: 'medium',
-        text: 'Change my password',
-        url: 'https://example.usewaypoint.com/reset_password?token=02938409809w8r09a83wr098aw0',
-      },
-    },
-  },
-  block_Gtk3kDYwsJqEmQf2XGWPRc: {
+  block_header_divider: {
     type: 'Divider',
     data: {
       style: {
         backgroundColor: null,
         padding: {
-          top: 16,
-          bottom: 16,
-          left: 24,
-          right: 24,
-        },
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0
+        }
       },
       props: {
-        lineHeight: 1,
-        lineColor: '#EEEEEE',
-      },
-    },
+        lineHeight: 4,
+        lineColor: '#BH251A'
+      }
+    }
   },
-  block_LACDCzUS2bsvEbmnq1KHuW: {
+  block_header_content: {
+    type: 'Image',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0
+        },
+        textAlign: 'left'
+      },
+      props: {
+        width: 200,
+        height: 60,
+        url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
+        alt: 'TPM Logo',
+        contentAlignment: 'middle'
+      }
+    }
+  },
+  'block-1743002813777': {
+    type: 'Divider',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0
+        }
+      },
+      props: {
+        lineColor: '#0354A6',
+        lineHeight: 2
+      }
+    }
+  },
+  'block-1743002912558': {
+    type: 'Heading',
+    data: {
+      props: {
+        text: 'Reset Your Password',
+        level: 'h1'
+      },
+      style: {
+        textAlign: 'right',
+        padding: {
+          top: 16,
+          bottom: 16,
+          right: 24,
+          left: 24
+        }
+      }
+    }
+  },
+  'block-1743003087322': {
+    type: 'ColumnsContainer',
+    data: {
+      style: {
+        padding: {
+          top: 16,
+          bottom: 16,
+          right: 24,
+          left: 24
+        }
+      },
+      props: {
+        columnsCount: 2,
+        columnsGap: 16,
+        columns: [
+          {
+            childrenIds: [
+              'block-1743003099046'
+            ]
+          },
+          {
+            childrenIds: [
+              'block-1743003111765'
+            ]
+          },
+          {
+            childrenIds: []
+          }
+        ]
+      }
+    }
+  },
+  'block-1743003099046': {
+    type: 'Image',
+    data: {
+      style: {
+        padding: {
+          top: 16,
+          bottom: 16,
+          right: 24,
+          left: 24
+        }
+      },
+      props: {
+        url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
+        alt: 'Sample product',
+        linkHref: null,
+        contentAlignment: 'middle'
+      }
+    }
+  },
+  'block-1743003111765': {
+    type: 'Heading',
+    data: {
+      props: {
+        text: 'Reset Your Password'
+      },
+      style: {
+        textAlign: 'right',
+        padding: {
+          top: 16,
+          bottom: 16,
+          right: 24,
+          left: 24
+        }
+      }
+    }
+  },
+  block_content: {
+    type: 'Container',
+    data: {
+      style: {
+        backgroundColor: '#f5f5f5',
+        padding: {
+          top: 32,
+          bottom: 32,
+          right: 32,
+          left: 32
+        }
+      },
+      props: {
+        childrenIds: [
+          'block-1743003224145'
+        ]
+      }
+    }
+  },
+  'block-1743003224145': {
+    type: 'Container',
+    data: {
+      style: {
+        backgroundColor: '#ffffff',
+        padding: {
+          top: 16,
+          bottom: 16,
+          right: 24,
+          left: 24
+        }
+      },
+      props: {
+        childrenIds: [
+          'block-1743003242864',
+          'block-1743003315381',
+          'block-1743003368624'
+        ]
+      }
+    }
+  },
+  'block-1743003242864': {
     type: 'Text',
     data: {
       style: {
-        color: '#474849',
-        backgroundColor: null,
-        fontSize: 12,
-        fontFamily: null,
+        color: '#344054',
+        fontSize: 23,
+        fontFamily: 'MODERN_SANS',
         fontWeight: 'normal',
-        textAlign: 'left',
+        textAlign: 'center',
         padding: {
-          top: 4,
-          bottom: 24,
-          left: 24,
+          top: 16,
+          bottom: 16,
           right: 24,
-        },
+          left: 24
+        }
       },
       props: {
-        text: 'Need help? Just reply to this email to contact support.',
-      },
-    },
+        text: 'We received a request to reset your password. Click the button below to create a new password for your account.'
+      }
+    }
   },
+  'block-1743003315381': {
+    type: 'Button',
+    data: {
+      style: {
+        textAlign: 'center',
+        padding: {
+          top: 16,
+          bottom: 16,
+          right: 24,
+          left: 24
+        }
+      },
+      props: {
+        buttonBackgroundColor: '#0354A6',
+        size: 'large',
+        text: 'Reset Password',
+        url: '{DRIVEWORKS_VARIABLE_RESET_PASSWORD_URL}'
+      }
+    }
+  },
+  'block-1743003368624': {
+    type: 'Text',
+    data: {
+      style: {
+        fontWeight: 'normal',
+        padding: {
+          top: 16,
+          bottom: 16,
+          right: 24,
+          left: 24
+        }
+      },
+      props: {
+        text: 'If you did not request a password reset, please ignore this email or contact support if you have concerns.'
+      }
+    }
+  }
 };
 
-export default RESET_PASSWORD;
+export default RESET_PASSWORD; 
