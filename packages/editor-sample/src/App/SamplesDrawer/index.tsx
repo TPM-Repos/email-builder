@@ -29,7 +29,14 @@ export default function SamplesDrawer() {
           <Stack alignItems="flex-start">
             <SidebarButton href="#">Empty</SidebarButton>
             {/* <SidebarButton href="#sample/welcome">Welcome email</SidebarButton> */}
+            <SidebarButton href="#sample/new-user-account">New User Account Request</SidebarButton>
             <SidebarButton href="#sample/account-approved">Account Approved</SidebarButton>
+            <SidebarButton href="#sample/account-exists">Account Already Exists</SidebarButton>
+            <SidebarButton href="#sample/account-denied">Account Denied</SidebarButton>
+            <SidebarButton href="#sample/email-verification">Email Verification</SidebarButton>
+            <SidebarButton href="#sample/forgot-password-link">Forgot Password Link</SidebarButton>
+            <SidebarButton href="#sample/forgot-password-no-account">Forgot Password - No Account</SidebarButton>
+            <SidebarButton href="#sample/password-reset-confirmation">Password Reset Confirmation</SidebarButton>
             {/* <SidebarButton href="#sample/driveworks">DriveWorks Template</SidebarButton> */}
             {/* <SidebarButton href="#sample/one-time-password">One-time passcode (OTP)</SidebarButton> */}
             <SidebarButton href="#sample/reset-password">Reset password</SidebarButton>
