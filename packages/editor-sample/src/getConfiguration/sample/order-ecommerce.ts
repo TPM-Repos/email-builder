@@ -4,11 +4,13 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
-      backdropColor: '#FFFFFF',
+      backdropColor: '#F2F4F7',
       canvasColor: '#FFFFFF',
-      textColor: '#333333',
+      textColor: '#667085',
       fontFamily: 'MODERN_SANS',
       childrenIds: [
+        'block_header_divider',
+        'block-1743002813777',
         'block_Ei34o65X5XnD5dexNQgXh8',
         'block_SLut2hpFsy7U6SmhtLtWNU',
         'block_RrwLc5YMpHJGE5Xe9fAZVW',
@@ -25,27 +27,61 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
       ],
     },
   },
-  block_PHe2XSbV4RvD76p21F3VdN: {
-    type: 'Heading',
+  block_header_divider: {
+    type: 'Divider',
     data: {
       style: {
-        color: null,
         backgroundColor: null,
-        fontFamily: null,
-        fontWeight: 'normal',
-        textAlign: 'left',
         padding: {
           top: 0,
           bottom: 0,
           left: 0,
-          right: 0,
-        },
+          right: 0
+        }
       },
       props: {
-        level: 'h2',
-        text: 'Unbranded Supply',
+        lineHeight: 4,
+        lineColor: '#BH251A'
+      }
+    }
+  },
+  'block-1743002813777': {
+    type: 'Divider',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0
+        }
       },
-    },
+      props: {
+        lineColor: '#0354A6',
+        lineHeight: 2
+      }
+    }
+  },
+  block_PHe2XSbV4RvD76p21F3VdN: {
+    type: 'Image',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0
+        },
+        textAlign: 'left'
+      },
+      props: {
+        width: 200,
+        height: 60,
+        url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
+        alt: 'TPM Logo',
+        contentAlignment: 'middle'
+      }
+    }
   },
   block_DeTzPQDerYjBEMkt6TuD41: {
     type: 'Container',
@@ -161,7 +197,7 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#404040',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 16,
         fontFamily: null,
@@ -187,7 +223,7 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
         fontSize: 16,
         fontFamily: null,
         fontWeight: 'normal',
-        textAlign: 'left',
+        textAlign: 'center',
         padding: {
           top: 16,
           bottom: 40,
@@ -196,7 +232,7 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
         },
       },
       props: {
-        buttonBackgroundColor: '#5696E5',
+        buttonBackgroundColor: '#0354A6',
         buttonStyle: 'rounded',
         buttonTextColor: '#FFFFFF',
         fullWidth: false,
@@ -670,7 +706,7 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#808080',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 16,
         fontFamily: null,
@@ -780,7 +816,7 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#808080',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 16,
         fontFamily: null,
@@ -890,7 +926,7 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#808080',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 16,
         fontFamily: null,
@@ -1422,7 +1458,7 @@ const ORDER_ECOMMERCE: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: null,
+        color: '#667085',
         backgroundColor: null,
         fontSize: 14,
         fontFamily: null,

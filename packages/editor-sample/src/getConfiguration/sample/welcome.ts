@@ -4,12 +4,14 @@ const WELCOME: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
-      backdropColor: '#F2F5F7',
+      backdropColor: '#F2F4F7',
       canvasColor: '#FFFFFF',
-      textColor: '#242424',
+      textColor: '#667085',
       fontFamily: 'MODERN_SANS',
       childrenIds: [
-        'block-1709571212684',
+        'block_header_divider',
+        'block-1743002813777',
+        'block_header_content',
         'block-1709571228545',
         'block-1709571234315',
         'block-1709571247550',
@@ -18,24 +20,62 @@ const WELCOME: TEditorConfiguration = {
         'block-1709571302968',
         'block-1709571282795',
       ],
-    },
+    },https://ai.tpmautomation.com/
   },
-  'block-1709571212684': {
-    type: 'Image',
+  block_header_divider: {
+    type: 'Divider',
     data: {
       style: {
+        backgroundColor: null,
         padding: {
-          top: 24,
-          bottom: 24,
-          right: 24,
-          left: 24,
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0,
         },
       },
       props: {
-        url: 'https://d1iiu589g39o6c.cloudfront.net/live/platforms/platform_A9wwKSL6EV6orh6f/images/wptemplateimage_JTNBBPGrNs2Ph4JL/marketbase.png',
-        alt: 'Marketbase',
-        linkHref: 'https://marketbase.app',
+        lineHeight: 4,
+        lineColor: '#BH251A',
+      },
+    },
+  },
+  block_header_content: {
+    type: 'Image',
+    data: {
+      style: {
+        backgroundColor: null,
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0,
+        },
+      },
+      props: {
+        width: 200,
+        height: 60,
+        url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
+        alt: 'TPM Logo',
         contentAlignment: 'middle',
+      },
+    },
+  },
+  'block-1743002813777': {
+    type: 'Divider',
+    data: {
+      style: {
+        backgroundColor: null,
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0,
+        },
+      },
+      props: {
+        lineHeight: 2,
+        lineColor: '#0354A6',
       },
     },
   },
@@ -43,7 +83,8 @@ const WELCOME: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        fontWeight: 'normal',
+        backgroundColor: null,
+        textAlign: 'left',
         padding: {
           top: 0,
           bottom: 16,
@@ -53,6 +94,8 @@ const WELCOME: TEditorConfiguration = {
       },
       props: {
         text: 'Hi Anna 👋,',
+        color: '#667085',
+        fontWeight: 'normal',
       },
     },
   },
@@ -60,7 +103,8 @@ const WELCOME: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        fontWeight: 'normal',
+        backgroundColor: null,
+        textAlign: 'left',
         padding: {
           top: 0,
           bottom: 16,
@@ -69,7 +113,9 @@ const WELCOME: TEditorConfiguration = {
         },
       },
       props: {
-        text: 'Welcome to Marketbase! Marketbase is how teams within fast growing marketplaces effortlessly monitor conversations to prevent disintermediation, identify problematic users, and increase trust & safety within their community.',
+        text: 'Welcome to TPM! TPM is how teams within fast growing organizations effortlessly manage their projects, prevent delays, identify bottlenecks, and increase efficiency within their teams.',
+        color: '#667085',
+        fontWeight: 'normal',
       },
     },
   },
@@ -77,7 +123,8 @@ const WELCOME: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        fontWeight: 'normal',
+        backgroundColor: null,
+        textAlign: 'left',
         padding: {
           top: 0,
           bottom: 16,
@@ -86,26 +133,9 @@ const WELCOME: TEditorConfiguration = {
         },
       },
       props: {
-        text: 'Best of all, you can connect your existing messaging services in minutes:',
-      },
-    },
-  },
-  'block-1709571258507': {
-    type: 'Image',
-    data: {
-      style: {
-        padding: {
-          top: 16,
-          bottom: 16,
-          right: 24,
-          left: 24,
-        },
-      },
-      props: {
-        url: 'https://d1iiu589g39o6c.cloudfront.net/live/platforms/platform_A9wwKSL6EV6orh6f/images/wptemplateimage_oWB821TUkDXvr2f4/Screenshot%202023-11-22%20at%2011.51.30%20AM.png',
-        alt: 'Video thumbnail',
-        linkHref: 'https://capture.dropbox.com/NBQEmoCKKP9RGBWr',
-        contentAlignment: 'middle',
+        text: 'Best of all, you can connect your existing project management tools in minutes:',
+        color: '#667085',
+        fontWeight: 'normal',
       },
     },
   },
@@ -113,7 +143,8 @@ const WELCOME: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        fontWeight: 'normal',
+        backgroundColor: null,
+        textAlign: 'left',
         padding: {
           top: 16,
           bottom: 16,
@@ -122,26 +153,9 @@ const WELCOME: TEditorConfiguration = {
         },
       },
       props: {
-        text: 'If you ever need help, just reply to this email and one of us will get back to you shortly. We’re here to help.',
-      },
-    },
-  },
-  'block-1709571282795': {
-    type: 'Image',
-    data: {
-      style: {
-        padding: {
-          top: 16,
-          bottom: 40,
-          right: 24,
-          left: 24,
-        },
-      },
-      props: {
-        url: 'https://d1iiu589g39o6c.cloudfront.net/live/platforms/platform_A9wwKSL6EV6orh6f/images/wptemplateimage_cAK8FpmBEGoSRNi3/Screenshot%202023-11-22%20at%2011.48.53%20AM.png',
-        alt: 'Illustration',
-        linkHref: null,
-        contentAlignment: 'middle',
+        text: "If you ever need help, just reply to this email and one of us will get back to you shortly. We're here to help.",
+        color: '#667085',
+        fontWeight: 'normal',
       },
     },
   },
@@ -149,7 +163,8 @@ const WELCOME: TEditorConfiguration = {
     type: 'Button',
     data: {
       style: {
-        fontSize: 14,
+        backgroundColor: null,
+        textAlign: 'left',
         padding: {
           top: 16,
           bottom: 24,
@@ -158,10 +173,52 @@ const WELCOME: TEditorConfiguration = {
         },
       },
       props: {
-        buttonBackgroundColor: '#0079cc',
-        buttonStyle: 'rectangle',
         text: 'Open dashboard',
         url: 'https://www.usewaypoint.com',
+        backgroundColor: '#0354A6',
+        textColor: '#FFFFFF',
+        buttonStyle: 'rounded',
+        fontSize: 14,
+      },
+    },
+  },
+  'block-1709571258507': {
+    type: 'Image',
+    data: {
+      style: {
+        backgroundColor: null,
+        padding: {
+          top: 16,
+          bottom: 16,
+          right: 24,
+          left: 24,
+        },
+      },
+      props: {
+        url: 'https://tpm.com/wp-content/uploads/2024/01/project-management-dashboard.png',
+        alt: 'TPM Dashboard',
+        linkHref: 'https://tpm.com/dashboard',
+        contentAlignment: 'middle',
+      },
+    },
+  },
+  'block-1709571282795': {
+    type: 'Image',
+    data: {
+      style: {
+        backgroundColor: null,
+        padding: {
+          top: 16,
+          bottom: 40,
+          right: 24,
+          left: 24,
+        },
+      },
+      props: {
+        url: 'https://tpm.com/wp-content/uploads/2024/01/project-management-illustration.png',
+        alt: 'Project Management Illustration',
+        linkHref: null,
+        contentAlignment: 'middle',
       },
     },
   },

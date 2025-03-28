@@ -4,18 +4,76 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
-      backdropColor: '#F5F5F5',
-      canvasColor: '#F5F5F5',
-      textColor: '#242424',
+      backdropColor: '#F2F4F7',
+      canvasColor: '#FFFFFF',
+      textColor: '#667085',
       fontFamily: 'MODERN_SANS',
       childrenIds: [
-        'block_URcE7RiYB227zNraU1Nujd',
+        'block_header_divider',
+        'block-1743002813777',
+        'block_header_content',
         'block_TisRUSez8uPYr6bgHLKQeg',
         'block_UQHMPb5NFLrY9PkWUckmHb',
         'block_FLTQdJVBNsmRxurTZTSC2V',
         'block_Qq64GeHw7K24Fgz5oX81kt',
       ],
     },
+  },
+  block_header_divider: {
+    type: 'Divider',
+    data: {
+      style: {
+        backgroundColor: null,
+        padding: {
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0
+        }
+      },
+      props: {
+        lineHeight: 4,
+        lineColor: '#BH251A'
+      }
+    }
+  },
+  'block-1743002813777': {
+    type: 'Divider',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0
+        }
+      },
+      props: {
+        lineColor: '#0354A6',
+        lineHeight: 2
+      }
+    }
+  },
+  block_header_content: {
+    type: 'Image',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0
+        },
+        textAlign: 'left'
+      },
+      props: {
+        width: 200,
+        height: 60,
+        url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
+        alt: 'TPM Logo',
+        contentAlignment: 'middle'
+      }
+    }
   },
   block_DNGbxXXMnwkRrecLDTP6VR: {
     type: 'Image',
@@ -75,11 +133,11 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
         },
       },
       props: {
-        buttonBackgroundColor: '#FFFFFF',
-        buttonStyle: 'pill',
-        buttonTextColor: '#242424',
+        buttonBackgroundColor: '#0354A6',
+        buttonStyle: 'rounded',
+        buttonTextColor: '#FFFFFF',
         fullWidth: false,
-        size: 'medium',
+        size: 'large',
         text: 'Sign in',
         url: 'https://remix.example.com/dashboard',
       },
@@ -199,7 +257,7 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#474849',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 14,
         fontFamily: null,
@@ -373,7 +431,7 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#474849',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 14,
         fontFamily: null,
@@ -502,7 +560,7 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#474849',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 14,
         fontFamily: null,
@@ -631,7 +689,7 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#474849',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 14,
         fontFamily: null,
@@ -814,7 +872,7 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#474849',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 14,
         fontFamily: null,
@@ -1326,7 +1384,7 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#474849',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 12,
         fontFamily: null,
@@ -1341,6 +1399,68 @@ const SUBSCRIPTION_RECEIPT: TEditorConfiguration = {
       },
       props: {
         text: 'Can we help? Just reply to this email.',
+      },
+    },
+  },
+  block_Hs2Ue4Vy5Vy2Ue4Vy5Vy2U: {
+    type: 'Container',
+    data: {
+      style: {
+        backgroundColor: '#F2F4F7',
+        padding: {
+          top: 24,
+          bottom: 24,
+          left: 24,
+          right: 24,
+        },
+      },
+      props: {
+        children: [
+          'block_Y7W2h9xDuNreQdgMrv82KZ',
+          'block_LbwZcoeGigXpK4PTVTyZ8E',
+          'block_67EyoqnbtLAHWXiobN39NX',
+          'block_6UhQGq7NwSAhRog8yRYjJo',
+          'block_7vHVGWiRQYr8sigcW9nJvD',
+        ],
+      },
+    },
+  },
+  block_Hs2Ue4Vy5Vy2Ue4Vy5Vy2V: {
+    type: 'Text',
+    data: {
+      style: {
+        color: '#667085',
+        backgroundColor: null,
+        fontSize: 16,
+        fontFamily: null,
+        fontWeight: 'normal',
+        textAlign: 'left',
+        padding: {
+          top: 24,
+          bottom: 24,
+          left: 24,
+          right: 24,
+        },
+      },
+      props: {
+        text: 'Your subscription has been renewed',
+      },
+    },
+  },
+  block_Hs2Ue4Vy5Vy2Ue4Vy5Vy2W: {
+    type: 'Divider',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          left: 24,
+          right: 24,
+        },
+      },
+      props: {
+        lineColor: '#0354A6',
+        lineHeight: 1,
       },
     },
   },

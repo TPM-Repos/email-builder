@@ -4,12 +4,14 @@ const POST_METRICS_REPORT: TEditorConfiguration = {
   root: {
     type: 'EmailLayout',
     data: {
-      backdropColor: '#EEEEEE',
+      backdropColor: '#F2F4F7',
       canvasColor: '#FFFFFF',
-      textColor: '#242424',
+      textColor: '#667085',
       fontFamily: 'MODERN_SANS',
       childrenIds: [
-        'block_6B5Ke1N2KdM4STQjw7eEHT',
+        'block_header_divider',
+        'block-1743002813777',
+        'block_header_content',
         'block_VE1bKDbSqiYD9VtmmaYX7w',
         'block_QQqjnauXAixe2LnJXVmHwQ',
         'block_9yEYNZmmmFauyuSKi9iJA9',
@@ -21,6 +23,62 @@ const POST_METRICS_REPORT: TEditorConfiguration = {
         'block_DomD4MLJ58VcMo49vmeTH8',
       ],
     },
+  },
+  block_header_divider: {
+    type: 'Divider',
+    data: {
+      style: {
+        backgroundColor: null,
+        padding: {
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0
+        }
+      },
+      props: {
+        lineHeight: 4,
+        lineColor: '#BH251A'
+      }
+    }
+  },
+  'block-1743002813777': {
+    type: 'Divider',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0
+        }
+      },
+      props: {
+        lineColor: '#0354A6',
+        lineHeight: 2
+      }
+    }
+  },
+  block_header_content: {
+    type: 'Image',
+    data: {
+      style: {
+        padding: {
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0
+        },
+        textAlign: 'left'
+      },
+      props: {
+        width: 200,
+        height: 60,
+        url: 'https://tpm.com/wp-content/uploads/2024/01/tpm-logo-color-no-tag.png',
+        alt: 'TPM Logo',
+        contentAlignment: 'middle'
+      }
+    }
   },
   block_6sP1Pi9AimAoti2ZPdNXUf: {
     type: 'Image',
@@ -230,11 +288,11 @@ const POST_METRICS_REPORT: TEditorConfiguration = {
         },
       },
       props: {
-        buttonBackgroundColor: '#24AF7F',
+        buttonBackgroundColor: '#0354A6',
         buttonStyle: 'rounded',
         buttonTextColor: '#FFFFFF',
         fullWidth: false,
-        size: 'medium',
+        size: 'large',
         text: 'View your analytics →',
         url: 'https://example.usewaypoint.com/post/1234/analytics',
       },
@@ -262,33 +320,11 @@ const POST_METRICS_REPORT: TEditorConfiguration = {
       },
     },
   },
-  block_FpDmSnPwiVzBXUvTc4yWFh: {
-    type: 'Text',
-    data: {
-      style: {
-        color: null,
-        backgroundColor: null,
-        fontSize: 16,
-        fontFamily: null,
-        fontWeight: 'normal',
-        textAlign: 'left',
-        padding: {
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0,
-        },
-      },
-      props: {
-        text: 'So excited to now have drag and drop on Waypoint. This builds on top of our new Navigator feature that we shipped earlier this week 🚢.',
-      },
-    },
-  },
   block_LjuDF6uu4qWL3Ju3ng63ky: {
     type: 'Container',
     data: {
       style: {
-        backgroundColor: '#FAFAFA',
+        backgroundColor: '#F2F4F7',
         borderColor: null,
         borderRadius: 8,
         padding: {
@@ -339,11 +375,11 @@ const POST_METRICS_REPORT: TEditorConfiguration = {
         },
       },
       props: {
-        buttonBackgroundColor: '#EEEEEE',
+        buttonBackgroundColor: '#0354A6',
         buttonStyle: 'rounded',
-        buttonTextColor: '#474849',
+        buttonTextColor: '#FFFFFF',
         fullWidth: false,
-        size: 'medium',
+        size: 'large',
         text: 'Show more',
         url: 'https://example.usewaypoint.com/jordanisip/posts',
       },
@@ -363,7 +399,7 @@ const POST_METRICS_REPORT: TEditorConfiguration = {
       },
       props: {
         lineHeight: 1,
-        lineColor: '#EEEEEE',
+        lineColor: '#0354A6',
       },
     },
   },
@@ -371,7 +407,7 @@ const POST_METRICS_REPORT: TEditorConfiguration = {
     type: 'Text',
     data: {
       style: {
-        color: '#474849',
+        color: '#667085',
         backgroundColor: null,
         fontSize: 12,
         fontFamily: null,
@@ -386,6 +422,28 @@ const POST_METRICS_REPORT: TEditorConfiguration = {
       },
       props: {
         text: 'Questions? Just reply to this email.',
+      },
+    },
+  },
+  block_FpDmSnPwiVzBXUvTc4yWFh: {
+    type: 'Text',
+    data: {
+      style: {
+        color: '#667085',
+        backgroundColor: null,
+        fontSize: 16,
+        fontFamily: null,
+        fontWeight: 'normal',
+        textAlign: 'left',
+        padding: {
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0,
+        },
+      },
+      props: {
+        text: 'So excited to now have drag and drop on Waypoint. This builds on top of our new Navigator feature that we shipped earlier this week 🚢.',
       },
     },
   },
